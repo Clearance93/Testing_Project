@@ -1,0 +1,10 @@
+
+version: "3"
+services:
+  angular_docker:
+    build: .
+    ports: 
+      - "1993:4200"
+    volumes: 
+      - "/app/node_modules"
+      - ".:/app"
